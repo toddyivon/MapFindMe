@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapFindMe - Sua Localização no Mapa</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MapFindMe</h1>
+        <p>Descubra e registre sua localização atual</p>
+    </header>
+
+    <main>
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+
+        <div class="controls">
+            <button id="locate-btn">Localizar-me</button>
+            <span id="status-message"></span>
+        </div>
+
+        <div class="history-container">
+            <h2>Histórico de Localizações</h2>
+            <div class="history-list-container">
+                <ul id="location-history"></ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MapFindMe | <a href="https://github.com/toddyivon/MapFindMe" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
